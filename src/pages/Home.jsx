@@ -10,7 +10,7 @@ export default function Home() {
             The place of happy cakes
           </p>
           <img
-            className=" max-w-2xl text-gray-500 lg:mx-auto"
+            className=" max-w-full text-gray-500 lg:mx-auto"
             src="https://cdn-icons-png.flaticon.com/512/817/817318.png"
             alt=""
           />
