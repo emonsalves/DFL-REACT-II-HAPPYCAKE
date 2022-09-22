@@ -12,7 +12,7 @@ function NotFound() {
           
         </p>
         <img
-          className=" max-w-2xl text-gray-500 lg:mx-auto"
+          className=" max-w-full text-gray-500 lg:mx-auto"
           src="https://cdn-icons-png.flaticon.com/512/4796/4796520.png"
           alt=""
         />
