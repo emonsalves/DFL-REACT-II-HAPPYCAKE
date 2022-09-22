@@ -1,13 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react"
+import PageLayout from "./layouts/PageLayout"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <PageLayout />
     </div>
   )
 }
