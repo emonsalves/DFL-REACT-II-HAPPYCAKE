@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section className="min-h-[69vh]">
+    <>
     <div className="px-4 my-2 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-600">Contact Us</h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-900 dark:text-gray-800 sm:text-xl"></p>
@@ -22,7 +22,7 @@ function Contact() {
             <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-700 sm:w-fit hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Send message</button>
         </form>
     </div>
-  </section>
+  </>
   )
 }
 

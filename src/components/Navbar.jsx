@@ -4,7 +4,7 @@ import React from "react"
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
   return (
-      <nav className="min-h-[15vh] flex flex-wrap items-center justify-between px-2 py-4 bg-red-600">
+      <nav className="flex flex-wrap items-center justify-between px-2 bg-red-600 py-4">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex ">
