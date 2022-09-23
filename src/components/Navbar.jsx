@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom"
 import React from "react"
 
-export default function Navbar({ fixed }) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
   return (
-    <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-red-600 mb-3">
+      <nav className="min-h-[15vh] flex flex-wrap items-center justify-between px-2 py-4 bg-red-600">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex ">
@@ -38,29 +37,33 @@ export default function Navbar({ fixed }) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <NavLink to="/">
-                  <p
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                    href="#pablo"
-                  >
-                    <span className="ml-2">Home</span>
-                  </p>
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white bg-orange-500 rounded-lg hover:opacity-75"
+                      : "px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-300 hover:opacity-75"
+                  }
+                  end
+                >
+                  Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/Contact">
-                  <p
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                    href="#pablo"
-                  >
-                    <span className="ml-2">Contacto</span>
-                  </p>
+                <NavLink
+                  to={"/Contact"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white bg-orange-500 rounded-lg hover:opacity-75"
+                      : "px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-gray-300 hover:opacity-75"
+                  }
+                >
+                  Contacto
                 </NavLink>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </>
   )
 }
