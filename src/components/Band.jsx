@@ -3,7 +3,7 @@ import React from "react"
 function Band() {
   return (
     <footer
-      className="min-h-[15vh] p-4 bg-red-600 bottom-0 w-full
+      className="bg-red-600 bottom-0 w-full fixed py-4
     shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-red-600"
     >
       <span className="text-sm text-gray-500 sm:text-center dark:text-white">
